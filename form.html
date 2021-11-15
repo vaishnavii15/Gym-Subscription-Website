@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym subscription</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/formstyle.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <div id="logo">
+                <img src="./static/logo1.jpg" alt="Gym">
+                BeFit
+            </div>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li><a href="/form">Enroll</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h3>Enroll Here!</h3>
+        <form action="/form", method="post", class="myForm">
+            <label for="name" class="label">Name</label>
+            <input type="text", class="myInput", name="name", placeholder="Enter your name" >
+            <label for="phone">Mobile number</label>
+            <input type="phone", class="myInput", name="phone", placeholder="Enter your Mobile number" >
+            <label for="email">Email id</label>
+            <input type="email", class="myInput", name="email", placeholder="Enter your Mail id" >
+            <label for="address">Address</label>
+            <input type="text", class="myInput", name="address", placeholder="Enter your Address" >
+            <label for="age">Is your age in between 18 - 65</label>
+            <select class="myInput", name="age">
+                <option value = "Select"> SELECT
+                </option>
+                <option value = "Yes"> YES 
+                </option>
+                <option value = "No"> NO 
+                </option>
+            </select>
+            <label for="yes/no">Do you want to pay 500₹ for enrollment?</label>
+            <select class="myInput", name="payment">
+                <option value = "Select"> SELECT
+                </option>
+                <option value = "Yes"> YES 
+                </option>
+                <option value = "No"> NO 
+                </option>
+            </select>
+            <label for="date">Date</label>
+            <input type="text", class="myInput", name="date", placeholder="Enter date of payment" >
+            <label for="batch">Select appropriate batch</label>
+            <select class="myInput", name="batch">
+                <option value = "Select"> SELECT
+                </option>
+                <option value = "6AM - 7AM"> 6AM - 7AM 
+                </option>
+                <option value = "7AM - 8AM"> 7AM - 8AM
+                </option>
+                <option value = "8AM - 9AM"> 8AM - 9AM
+                </option>
+                <option value = "5PM - 6PM"> 5PM - 6PM
+                </option>
+            </select>
+            <button class="btn">Enroll Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
